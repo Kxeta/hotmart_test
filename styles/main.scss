@@ -2,4 +2,46 @@
 
 body{
 	font-family: 'Open Sans', sans-serif;
+  .nopadding{
+    padding: 0;
+  }
+	.sidebar-nav {
+    .navbar{
+      .navbar-collapse{
+        padding: 0;
+        max-height: none;
+        .navbar-brand{
+      		height: auto;
+      		text-align: right;
+          width: 100%;
+          padding: 0;
+          background-color: $red;
+          border-left:1px solid $dark_red;
+          border-right:1px solid $dark_red;
+        }
+        .nav{          
+          width: 100%;
+          li{
+            float: none;
+            display: block;
+            border-bottom: 1px solid $border_color;
+            border-left:1px solid $border_color;
+            border-right:1px solid $border_color;
+            a{              
+              padding-top: 12px;
+              padding-bottom: 12px;
+              border-left:4px solid transparent;
+            }            
+            &.active{
+              border-left: 5px solid $red;
+              a{
+                background-color: white;
+                border-left:0;
+              }
+            }
+          }
+        }
+      }
+    }
+	}
 }

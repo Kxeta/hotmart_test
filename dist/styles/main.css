@@ -1,3 +1,41 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+body .nopadding {
+  padding: 0;
+}
+body .sidebar-nav .navbar .navbar-collapse {
+  padding: 0;
+  max-height: none;
+}
+body .sidebar-nav .navbar .navbar-collapse .navbar-brand {
+  height: auto;
+  text-align: right;
+  width: 100%;
+  padding: 0;
+  background-color: #cc0000;
+  border-left: 1px solid #b70000;
+  border-right: 1px solid #b70000;
+}
+body .sidebar-nav .navbar .navbar-collapse .nav {
+  width: 100%;
+}
+body .sidebar-nav .navbar .navbar-collapse .nav li {
+  float: none;
+  display: block;
+  border-bottom: 1px solid #e3e3e3;
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+}
+body .sidebar-nav .navbar .navbar-collapse .nav li a {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-left: 4px solid transparent;
+}
+body .sidebar-nav .navbar .navbar-collapse .nav li.active {
+  border-left: 5px solid #cc0000;
+}
+body .sidebar-nav .navbar .navbar-collapse .nav li.active a {
+  background-color: white;
+  border-left: 0;
+}

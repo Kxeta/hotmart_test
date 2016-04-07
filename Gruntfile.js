@@ -175,6 +175,13 @@ module.exports = function(grunt) {
 
     },
 
+    // configure wiredep ------------------------------------------
+    wiredep: {
+      task: {
+        src: ['index.html']
+      }
+    },
+
     // configure watch to auto update ------------------------------------------
 
     watch: {
@@ -237,6 +244,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   
   grunt.loadNpmTasks('grunt-contrib-jshint');
+
+  grunt.loadNpmTasks('grunt-wiredep');
   
   grunt.loadNpmTasks('grunt-contrib-watch');
 
@@ -255,7 +264,7 @@ module.exports = function(grunt) {
   // ===========================================================================
 
   grunt.registerTask('default', ['clean','sass', 'autoprefixer',  'cssmin', 'jshint', 'uglify']);
-  grunt.registerTask('dev', ['clean', 'sass', 'autoprefixer', 'jshint', 'copy', 'watch']);
+  grunt.registerTask('dev', ['clean', 'wiredep', 'sass', 'autoprefixer', 'jshint', 'copy', 'watch']);
   grunt.registerTask('deploy', ['clean', 'sass', 'autoprefixer', 'cssmin', 'jshint', 'uglify']);
 
 
