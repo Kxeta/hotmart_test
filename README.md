@@ -3,14 +3,14 @@ This is a test for the oportunity to be a Front-end Developer at Hotmart
 
 The files are inside the folder "TESTE_FINAL"
 
-If you have downloaded this rep, you need to install some SW's:
+If you have downloaded this rep, you'll need to install some SW's:
 
  - RUBY
  - Ruby's gem COMPASS
  - Node.js
  - Grunt
 
-After installed these sw's, you need to run three commands, inside the folder "TESTE_FINAL":
+After installed these sw's, you'll need to run three commands, inside the folder "TESTE_FINAL":
 
  - npm install
  - bower install
