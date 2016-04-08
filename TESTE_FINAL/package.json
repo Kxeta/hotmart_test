@@ -1,0 +1,39 @@
+{
+  "name": "hotmart_test",
+  "version": "1.0.0",
+  "description": "This is a test for the oportunity to be a front-end developer at Hotmart",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Kxeta/hotmart_test.git"
+  },
+  "keywords": [
+    "Hotmart",
+    "Front-end",
+    "Test"
+  ],
+  "author": "Phillipe Caixeta Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kxeta/hotmart_test/issues"
+  },
+  "homepage": "https://github.com/Kxeta/hotmart_test#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "grunt": "^0.4.0",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-wiredep": "^3.0.0",
+    "jshint-stylish": "^2.1.0"
+  }
+}

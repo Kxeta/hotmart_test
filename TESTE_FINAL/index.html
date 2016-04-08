@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Hotmart Front-end Test</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,400italic,300italic,600,600italic,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<!-- endbower -->
+
+	<link rel="stylesheet" href="dist/styles/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-md-2 nopadding">
+				<div class="sidebar-nav">
+				  <div class="navbar navbar-default" role="navigation">
+				    <div class="navbar-header">
+		    		  <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="/"><img src="dist/images/hotmart_logo_mobile.png" class="img-responsive" alt="Hotmart"></a>
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				    </div>
+				    <div class="navbar-collapse collapse sidebar-navbar-collapse">
+
+						<a class="navbar-brand hidden-xs" href="/"><img src="dist/images/hotmart_logo.png" class="img-responsive" alt="Hotmart"></a>
+						<ul class="nav navbar-nav" id="sidebar_menu">
+							<li class="active"><a href="1" class="msg_menu_link"><img class="icon_menu icon_menu_inactive" src="dist/images/icon_market.png" alt=""><img class="icon_menu icon_menu_active" src="dist/images/icon_market_active.png" alt="">Mercado<img class="arrow_menu arrow_active" src="dist/images/arrow_right_active.png" alt=""><img class="arrow_menu arrow_right" src="dist/images/arrow_right.png" alt=""></a></li>
+							<li><a href="2" class="msg_menu_link"><img class="icon_menu icon_menu_inactive" src="dist/images/icon_products.png" alt=""><img class="icon_menu icon_menu_active" src="dist/images/icon_products_active.png" alt="">Produtos<img class="arrow_menu arrow_active" src="dist/images/arrow_right_active.png" alt=""><img class="arrow_menu arrow_right" src="dist/images/arrow_right.png" alt=""></a></li>
+							<li><a href="3" class="msg_menu_link"><img class="icon_menu icon_menu_inactive" src="dist/images/icon_sales.png" alt=""><img class="icon_menu icon_menu_active" src="dist/images/icon_sales_active.png" alt="">Vendas<img class="arrow_menu arrow_active" src="dist/images/arrow_right_active.png" alt=""><img class="arrow_menu arrow_right" src="dist/images/arrow_right.png" alt=""></a></li>
+							<li><a href="4" class="msg_menu_link"><img class="icon_menu icon_menu_inactive" src="dist/images/icon_buy.png" alt=""><img class="icon_menu icon_menu_active" src="dist/images/icon_buy_active.png" alt="">Compras<img class="arrow_menu arrow_active" src="dist/images/arrow_right_active.png" alt=""><img class="arrow_menu arrow_right" src="dist/images/arrow_right.png" alt=""></a></li>
+							<li class="hotlinks hotlinks_title">Add Hot Links</li>
+							<li class="hotlinks hotlinks_item"><a href="#" class="add_shortcut"><img src="dist/images/icon_add.png" alt="Adicionar Atalho"></a><a class="shortcut_link" href="#">Atalho 1</a></li>
+						</ul>
+				    </div><!--/.nav-collapse -->
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-9 col-md-10 content">
+				<div class="page_title clearfix">
+					<img class="page_title_icon" src="dist/images/icon_messeges.png" alt="Mensagens">
+					<h1 class="page_title_name">Mensagens</h1>
+				</div>
+				<div class="page_actions clearfix">
+					<div class="delete_wrapper pull-right">											
+						<button type="button" id="delete_msg" class="btn btn-action"><img class="page_action_icon icon_action_default" src="dist/images/icon_delete.png" alt="Deletar"><img class="page_action_icon icon_action_hover" src="dist/images/icon_delete_hover.png" alt="Deletar"></button>
+					</div>
+					<div class="search_wrapper pull-right">
+						<form action="" method="POST" class="form-inline search_form clearfix" role="form">						
+							<div class="form-group clearfix">
+								<input type="search" name="search_msg" id="search_msg" class="form-control" value="" placeholder="pesquisar" title="">
+							</div>						
+							<button type="submit" class="btn btn-action"><img class="page_action_icon icon_action_default" src="dist/images/icon_search.png" alt="Pesquisar"><img class="page_action_icon icon_action_hover" src="dist/images/icon_search_hover.png" alt="Pesquisar"></button>
+						</form>						
+					</div>
+				</div>
+
+				<section id="msg_wrapper">
+					<div class="msg_container active_msg_container" id="msg_group_1">
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_1.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_2.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>	
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_3.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>	
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_4.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>					
+					</div>
+
+					<div class="msg_container " id="msg_group_2">
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_1.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_4.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>	
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_3.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>	
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_2.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>					
+					</div>
+
+					<div class="msg_container" id="msg_group_3">
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_2.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_3.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>	
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_4.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>	
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_1.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>					
+					</div>
+
+					<div class="msg_container" id="msg_group_4">
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_4.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_3.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>	
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_2.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>	
+						<div class="checkbox msg_item" id="msg_XX">
+							<input type="checkbox" value="">
+							<div class="msg_data">
+								<img src="dist/images/person_1.png" class="msg_user_photo img-responsive" alt="user_name">
+								<div class="msg_data_container">	
+									<p class="top_data"><span class="user_name">Rodrigo RC</span> • <span class="msg_date">22/09/2014</span></p>
+									<p class="msg_excerpt_data">Olá, como vai, podemos conversar?</p>
+								</div>
+								<div class="go_to_msg_single">
+									<a href="#" class="go_to_msg_link">
+										<img class="arrow_msg_inactive"src="dist/images/arrow_right_white.png" alt="Ir para mensagem"><img class="arrow_msg_active"src="dist/images/arrow_right_active.png" alt="Ir para mensagem">
+										<p class="qt_msg_link">150</p>
+									</a>
+								</div>
+							</div>
+						</div>					
+					</div>
+				</section>				
+
+				<div class="pagination col-xs-12 text-center">
+					<ul class="list-inline">
+					    <li><a href="#" class="prev"><img class="prev_inactive" src="dist/images/prev.png" alt="Anterior"><img class="prev_active" src="dist/images/prev_hover.png" alt="Anterior"></a></li>
+					    <li><a href="#" class="next"><img class="next_inactive" src="dist/images/next.png" alt="Anterior"><img class="next_active" src="dist/images/next_hover.png" alt="Anterior"></a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+	</div>	
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<!-- endbower -->
+	<script src="dist/scripts/main.js"></script>
+
+</body>
+</html>
